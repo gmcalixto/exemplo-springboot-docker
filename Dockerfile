@@ -1,4 +1,6 @@
 # ---- Estágio de Build ----
+#docker build -t meu-app-java .
+#docker run -p 8080:8080 meu-app-java
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY pom.xml .
